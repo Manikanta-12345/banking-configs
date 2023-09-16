@@ -1,0 +1,19 @@
+eureka:
+ instance:
+   prefer-ip-address: true
+ client:
+   fetch-registry: true
+   register-with-eureka: true
+   service-url:
+     defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+     
+spring:
+  datasource:
+    username: ${DB_USER_NAME:root}
+    password: ${DB_PASSWORD:root@123}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/${DB_NAME:vehicle_db}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57InnoDBDialect
+    hibernate:
+      ddl-auto: update
