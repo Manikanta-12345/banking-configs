@@ -1,11 +1,12 @@
-eureka:
- instance:
-   prefer-ip-address: true
- client:
-   fetch-registry: true
-   register-with-eureka: true
-   service-url:
-     defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
+# commented this to use k8s dns or service discovery
+# eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 cards:
   url: ${CARDS_URL:http://CARDS}
 accounts:
