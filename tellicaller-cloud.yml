@@ -7,6 +7,6 @@ eureka:
    service-url:
      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 cards:
-  url: ${CARDS_URL:CARDS}
+  url: ${CARDS_URL:http://CARDS}
 accounts:
-   url: ${ACCOUNTS_URL:ACCOUNTS}
+   url: ${ACCOUNTS_URL:http://ACCOUNTS}
