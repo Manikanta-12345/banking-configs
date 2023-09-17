@@ -20,7 +20,6 @@ spring:
       ddl-auto: update
 
   zipkin:
-    tracing:
-      endpoint: http://zipkin-svc:9411/api/v2/spans
+    baseUrl: http://zipkin-svc:9411/api/v2/spans
 
 
