@@ -58,3 +58,6 @@ spec:
       port: 9411
       targetPort: 9411
       
+#docker push  asia-docker.pkg.dev/endless-ability-398915/banking-repo/tellicaller-service:0.0.1
+#docker build -t asia-docker.pkg.dev/endless-ability-398915/banking-repo/tellicaller-service:0.0.1 . --platform linux/amd64
+#kubectl rollout restart deployment/your-deployment-name

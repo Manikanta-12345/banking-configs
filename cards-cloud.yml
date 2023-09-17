@@ -19,6 +19,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-zipkin:
+  zipkin:
     tracing:
       endpoint: http://zipkin-svc:9411/api/v2/spans

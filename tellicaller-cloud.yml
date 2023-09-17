@@ -12,6 +12,7 @@ cards:
 accounts:
    url: ${ACCOUNTS_URL:http://ACCOUNTS}
 
-zipkin:
+spring:
+  zipkin:
     tracing:
       endpoint: http://zipkin-svc:9411/api/v2/spans
