@@ -18,3 +18,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
+
+zipkin:
+    tracing:
+      endpoint: http://zipkin-svc:9411/api/v2/spans

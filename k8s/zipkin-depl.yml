@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: zipkin
-        image: docker.io/docker pull openzipkin/zipkin
+        image: docker.io/openzipkin/zipkin
         imagePullPolicy: Always
         ports:
         - containerPort: 9411
